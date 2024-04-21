@@ -69,13 +69,13 @@ namespace CinemaAPI.Controllers
             return BadRequest("Genre not found");
         }
 
-        [HttpDelete("deleteGenre")]
+        [HttpDelete("deleteGenre/{id}")]
         public async Task<IActionResult> DeleteGenre(int id)
         {
             var genre = await _context.Genres.FindAsync(id);
             if (genre != null)
             {
-                _context.Remove(genre);
+                _context.Remove(genre); // _context.Genres.Remove(genre);
                 await _context.SaveChangesAsync();
                 return Ok($"{genre.Name} GENRE IS DELETED.");
             }
