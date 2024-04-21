@@ -2233,11 +2233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Courses\\Web API\\Devcreed Api\\Implement\\CinemaAPI\\CinemaAPI.csproj",
+      "projectUniqueName": "D:\\Courses\\WebAPI\\DevcreedApi\\Implementation\\CinemaAPI\\CinemaAPI\\CinemaAPI.csproj",
       "projectName": "CinemaAPI",
-      "projectPath": "D:\\Courses\\Web API\\Devcreed Api\\Implement\\CinemaAPI\\CinemaAPI.csproj",
+      "projectPath": "D:\\Courses\\WebAPI\\DevcreedApi\\Implementation\\CinemaAPI\\CinemaAPI\\CinemaAPI.csproj",
       "packagesPath": "C:\\Users\\ECC\\.nuget\\packages\\",
-      "outputPath": "D:\\Courses\\Web API\\Devcreed Api\\Implement\\CinemaAPI\\obj\\",
+      "outputPath": "D:\\Courses\\WebAPI\\DevcreedApi\\Implementation\\CinemaAPI\\CinemaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Dev express\\Components\\Offline Packages"

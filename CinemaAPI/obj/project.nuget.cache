@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "do48oTLjmZOXAvb+RLhXzYE1GtTMdAk9owaZrDsTsg0lyLPYwRpLL0Cp6/IAhGvF3Gv/xTEimlNHrjnW0y4wAw==",
+  "dgSpecHash": "U3Hr7J1RKjrgL1r3XEwbtbSYOS5fi3ILvmWmx7AyNmTBQ6Itd9W+zmsynfYzQj0S/v605ZaiVKWDhPe+SkCiVA==",
   "success": true,
-  "projectFilePath": "D:\\Courses\\Web API\\Devcreed Api\\Implement\\CinemaAPI\\CinemaAPI.csproj",
+  "projectFilePath": "D:\\Courses\\WebAPI\\DevcreedApi\\Implementation\\CinemaAPI\\CinemaAPI\\CinemaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ECC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ECC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -26,7 +26,7 @@ namespace CinemaAPI.Controllers
         }
 
         [HttpPost("AddOneGenre")]
-        public async Task<IActionResult> AddOneGenre(AddGenresDto dto)
+        public async Task<IActionResult> AddOneGenre(GenresDto dto)
         {
             Genre genre = new() { Name=dto.Name };
             
@@ -37,7 +37,7 @@ namespace CinemaAPI.Controllers
         }
 
         [HttpPost("AddGenres")]
-        public async Task<IActionResult> AddGenres(List<AddGenresDto> dtos)
+        public async Task<IActionResult> AddGenres(List<GenresDto> dtos)
         {
             List<Genre> genres = new List<Genre>();
 
@@ -56,10 +56,17 @@ namespace CinemaAPI.Controllers
             return Ok(genres);
         }
 
-        [HttpPut("UpdateGenre")]
-        public async Task<IActionResult> UpdateGenre()
+        [HttpPut("UpdateGenre/{id}")]
+        public async Task<IActionResult> UpdateGenre(int id,GenresDto dto)
         {
-
+           var genre= await _context.Genres.FindAsync(id);
+            if (genre != null)
+            {
+                genre.Name = dto.Name;
+                _context.SaveChanges();
+                return Ok(genre);
+            }
+            return BadRequest("Genre not found");
         }
     }
 }
