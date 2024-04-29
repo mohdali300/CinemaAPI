@@ -14,14 +14,36 @@ namespace CinemaAPI.Controllers
     {
         private readonly ApplicationDbContext _context;
 
+        private List<string> Extentions = new() { ".jpg", ".png" };
+
+
         public MoviesController(ApplicationDbContext context)
         {
             this._context = context;
         }
 
-        [HttpPost("AddMovie")]
-        public async Task<IActionResult> AddMovie([FromForm] MovieDto dto)
+        [HttpGet]
+        public async Task<IActionResult> GetAllMovies()
         {
+            var movie=
+                await _context.Movies
+                .OrderByDescending(x => x.Rate)
+                .Include(g=>g.Genre)
+                .ToListAsync();
+
+            return Ok(movie);
+        }
+
+        [HttpPost("AddMovie")]
+        public async Task<IActionResult> AddMovieAsync([FromForm] MovieDto dto)
+        {
+            if (!Extentions.Contains(Path.GetExtension(dto.Poster.FileName).ToLower()))
+                return BadRequest("Invalid Image Extention");
+
+            // to make sure about Genre existence
+            var validGenre = await _context.Genres.AnyAsync(id=>id.Id==dto.GenreId);
+            if (!validGenre) return BadRequest("Invalid Genre!");
+
             //---- to handle Poster type
             using var dataStream=new MemoryStream();
             await dto.Poster.CopyToAsync(dataStream);

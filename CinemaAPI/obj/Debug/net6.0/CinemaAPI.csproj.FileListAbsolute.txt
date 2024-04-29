@@ -128,9 +128,10 @@ D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\staticwebassets.build.json
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\staticwebassets.development.json
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\scopedcss\bundle\CinemaAPI.styles.css
-D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.csproj.CopyComplete
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.dll
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\refint\CinemaAPI.dll
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.pdb
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.genruntimeconfig.cache
 D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\ref\CinemaAPI.dll
+D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.sourcelink.json
+D:\Courses\WebAPI\DevcreedApi\Implementation\CinemaAPI\CinemaAPI\obj\Debug\net6.0\CinemaAPI.csproj.Up2Date
